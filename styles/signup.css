@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: rgb(96, 103, 112);
+}
+
+.container {
+  max-width: 500px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: .5em 0;
+  color: #1877f2;
+}
+
+@media (max-width:1000px) {
+  h1{
+    margin: .3em 0;
+  }
+}
+h2{
+  color: rgb(29, 29, 29);
+}
+
+h6{
+  font-size: .95rem;
+  font-weight: 400;
+}
+
+
+.form-container{
+  background-color: white;
+  padding-top: 10px;
+  max-width: 460px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+form {
+  border-top:  1px solid gainsboro;
+  margin-top: 5px;
+  padding: 1em;
+  margin-top: .7em;
+}
+
+.full-name{
+  display: flex;
+}
+
+.full-name input{
+  width: 50%;
+}
+
+.full-name input, .mobile-pass input{
+  padding: 1em;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+
+.full-name input:last-child{
+  margin-left: 1em;
+}
+
+input::placeholder{
+  font-size: .95rem;
+}
+
+.label-container{
+  margin-top: .7em;
+}
+
+label{
+  font-size: .75rem;
+  color: rgb(79, 79, 80);
+}
+
+i{
+  color: rgb(110, 110, 110);
+}
+
+.select-container, .gender-container{
+  margin-top: .3em;
+  display: flex;
+}
+
+.select-container select:not(:first-child), .gender-container span:not(:first-child){
+  margin-left: .8em;
+}
+
+.select-container select, .gender-container span{
+  font-size: .9rem;
+  padding: 7px 5px;
+  color: rgb(32, 32, 32);
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  flex: 1;
+}
+
+
+.gender-container span{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 7px;
+}
+
+.mobile-pass{
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-pass input{
+  margin-top: .7em;
+}
+
+p{
+  color:  rgb(119, 119, 119);
+  font-size: .7rem;
+  margin-top: 1em;
+}
+
+p span{
+  color: #006eff;
+}
+
+button{
+  background-color: #00a400;
+  border: 0;
+  color: white;
+  border-radius: 6px;
+  padding: .5em 2em;
+  font-weight: 600;
+  font-size: 1.1rem;
+  max-width: 200px;
+  width: 100%;
+  display: block;
+  margin: 1em auto;
+}
+
+a{
+  text-decoration: none;
+  color: #3886ec;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+}
+
+
